@@ -28,6 +28,20 @@ int main() {
         tabuleiro[linhaV + i][colunaV] = 3;
     }
 
+    //Navio diagonal 1 (tamanho 3)
+    int linhaD = 2;  // começa na linha 3 (índice 2)
+    int colunaD = 1; // começa na coluna A (índice 1)
+    for (int i = 0; i < 3; i++) {
+        tabuleiro[linhaD - i][colunaD + i] = 3;
+    }
+
+    //Navio diagonal 2 (tamanho 4)
+    int linhaDi = 5;  // começa na linha 6 (índice 5)
+    int colunaDi = 1; // começa na coluna A (índice 1)
+    for (int i = 0; i < 4; i++) {
+        tabuleiro[linhaDi + i][colunaDi + i] = 3;
+    }
+
     //Exibindo o Tabuleiro
     printf("   TABULEIRO BATALHA NAVAL\n\n");
 
